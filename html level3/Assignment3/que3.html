@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/server">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="n" id="name" placeholder="Write your name">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="mail" id="email" placeholder="Write your email">
+        </div>
+        <br>
+        <div>
+            <label for="message">Message:</label>
+            <br>
+            <textarea name="m" id="message" rows="4" cols="35"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="choice">Rate us out of 5:</label>
+            <br>
+            <input type="radio" name="choice" id="choice1"  value="1">
+            <label for="choice1">1</label><br>
+            <input type="radio" name="choice" id="choice2" value="2">
+            <label for="choice2">2</label><br>
+            <input type="radio" name="choice" id="choice3" value="3">
+            <label for="choice3">3</label><br>
+            <input type="radio" name="choice" id="choice4" value="4">
+            <label for="choice4">4</label><br>
+            <input type="radio" name="choice" id="choice5" value="5">
+            <label for="choice5">5</label><br>
+            <div>
+                <br>
+                <button>Send your message!</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
