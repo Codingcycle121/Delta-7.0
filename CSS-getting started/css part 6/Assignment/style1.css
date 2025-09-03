@@ -1,0 +1,70 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,auto);
+    gap: 10px;
+    height: 100vh;
+    width: 70%;
+    margin: 0px auto;
+}
+.container div{
+    font-size: 0.9rem;
+    background-color: pink;
+}
+#header{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 12;
+}
+#sidebar{
+    grid-row: 2 /span 10;
+    grid-column: 1 / span 3;
+}
+#navigation{
+    grid-row: 2 /span 1;
+    grid-column: 4 / span 6;
+}
+#ads{
+    grid-row: 2 /span 10;
+    grid-column: 10 / span 3;
+}
+#main{
+    grid-row: 3 /span 9;
+    grid-column: 4 / span 6;
+}
+#footer{
+    grid-row: 12 /span 1;
+    grid-column: 1 / span 12;
+}
+
+@media (max-width:720px){
+   #header{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 12;
+    background-color: pink;
+}
+#sidebar{
+    grid-row: 3 /span 9;
+    grid-column: 1 / span 3;
+    background-color: pink;
+}
+#navigation{
+    grid-row: 2 /span 1;
+    grid-column: 1 / span 12;
+    background-color: pink;
+}
+#ads{
+    grid-row: 12 /span 1;
+    grid-column: 1 / span 3;
+    background-color: pink;
+}
+#main{
+    grid-row: 3 /span 9;
+    grid-column: 4 / span 9;
+    background-color: pink;
+}
+#footer{
+    grid-row: 12 /span 1;
+    grid-column: 4 / span 9;
+    background-color: pink;
+}
+}
