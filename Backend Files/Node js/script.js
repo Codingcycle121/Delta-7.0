@@ -6,6 +6,8 @@
 // let math=require("./math");
 // console.log(math.sum(5,5));
 // console.log(math.PI);
-let fruits=require("./Fruits");
+// let fruits=require("./Fruits");
 // console.log(fruits);
-console.log(fruits[0].module.name);
+// console.log(fruits[0].module.name);
+import {sum} from "./math.js";
+console.log(sum(10,5));
