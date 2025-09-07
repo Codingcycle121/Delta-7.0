@@ -1,0 +1,39 @@
+h2{
+    color:rgba(255, 85, 0, 0.871);
+}
+span{
+    color: rgb(232, 120, 22);
+}
+img{
+    height: 250px;
+    width: 400px;
+    border-radius: 15px;
+}
+.card{
+    border: 2px solid black;
+    height: auto;
+    width: 400px;
+    border-radius: 15px;
+    padding: 20px;
+}
+#pets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h4{
+    text-align: right;
+    color: rgb(8, 108, 108);
+}
+@media(max-width:902px)
+{
+    .card{
+        margin: 10px auto;
+        width: 350px;
+    }
+    img{
+        width: 300px;
+        height: 200px;
+        padding: 10px;
+    }
+}
