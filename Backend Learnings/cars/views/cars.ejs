@@ -1,0 +1,43 @@
+<%- include("includes/head.ejs") %>
+
+    <body>
+        <center><h1>Welcome to <%= cars[0].make %> Motors</h1></center>
+        <hr>
+        <% for (const car of cars) { %>
+            <div>
+                <h3>Car Brand - <%= car.make %>
+                </h3>
+                <h3>Model - <%= car.model %>
+                </h3>
+                <h3>Year of Manufacture - <%= car.year %>
+                </h3>
+                <h3>Price - $<%= car.price %> / ₹<%= (car.price * 88.06).toFixed(2) %> without taxes</h3>
+                <h3>Rating - <%= car.rating %>
+                </h3>
+                <h3>Car Color - <%= car.color %>
+                </h3>
+                <h3>Car Mileage - <%= car.mileage %>
+                </h3>
+                <h3>Fuel Type - <%= car.fuel_type %>
+                </h3>
+                <h3>Transmission - <%= car.transmission %>
+                </h3>
+                <h3>Condition - <%= car.condition %>
+                </h3>
+                <h3>Features:</h3>
+                <ul>
+                    <% for (const feature of car.features) { %>
+                        <li>
+                            <%= feature %>
+                        </li>
+                        <% } %>
+                </ul>
+                <h3>Seller - <%= car.seller_type %>
+                </h3>
+            </div>
+            <hr>
+            <% } %>
+
+    </body>
+
+    </html>
